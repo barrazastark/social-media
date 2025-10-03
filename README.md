@@ -30,7 +30,9 @@ types and data structures needed for the Social APP.
     - Stats
     - Tabs for Posts and Friends List
 
-- I will split Profile page into two components , the first one is the page (server component) that has the responsability to fetch the data and the other (client) that will accepts the response as props and display the information.
+- I will split Profile page into two components , the first one is the page (server component) that has the responsability to fetch the data and the other (client) that will accepts the response as props and display the information. With this approach I am not only splitting responsabilities but this is more SEO friendly and loads faster.
+
+- For the profile page I will create a /api/me route that will serve all the information for the profile page.
 
 - I will create a Nav.tsx where I include
     - Title of WebPage
@@ -47,14 +49,12 @@ types and data structures needed for the Social APP.
 
 - Now I will create the /posts/id page.tsx where I am goind to fetch for an individual post, so first I will create the /posts/id API route, then I will counsume in the post detail page.
 
-- Now I will create the Pofile page, for this page I will create a new API route /me that will return a user profile with the posts and friend the user has, the Profile page will be a client component because I need to use react hooks to keep the state of some tabs where Ill be rendering the posts and friends
-
 - Now I will polish the Look & Feel
 
 
 ## What can be improved ?
 
-- If i have more time I would improve the UI/UX by adding more astetic loaders (skeletons), optimistic responses and streaming data correctly.
+- If i had more time I would improve the UI/UX by adding more astetic loaders (skeletons), optimistic responses and streaming data correctly.
 
 - I would create a more sofisticated Post detail view with all the comments of the posts
 
@@ -63,6 +63,6 @@ types and data structures needed for the Social APP.
 - I would create a more interesting feature regarding friends.
 
 
-## [Live Demo](https://social-media-gules-chi.vercel.app/)
+## [Live Demo](https://social-media-kappa.vercel.app/)
 
 
